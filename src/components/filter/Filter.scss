@@ -1,0 +1,13 @@
+.filter {
+    width: 580px;
+    margin: 20px  auto;
+
+    button {
+        padding: 5px 15px;
+        margin-right: 6px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
