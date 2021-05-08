@@ -31,13 +31,13 @@ form {
     }
     input:nth-of-type(2) {
         width: 80px;
-        background: #1fbd1f;
+        background: #029ee0;
         color: white;
 
         &:hover {
-            border: 1px solid green;
-            color: green;
-            background: #d5d5d5;
+            border: 1px solid #0178f7;
+            color: #0178f7;
+            background: #e5e5e5;
             cursor: pointer;
         }
     }

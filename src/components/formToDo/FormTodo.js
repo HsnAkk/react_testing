@@ -19,15 +19,19 @@ function FormTodo() {
     const submitHandler = (e)  => {
         e.preventDefault();
 
-        let todoObj = {
-            id: uuidv4(),
-            todo,
-            priority,
-            completed: false
+        if (todo && priority) {
+            let todoObj = {
+                id: uuidv4(),
+                todo,
+                priority,
+                completed: false
+            }
+            console.log(todoObj);
+    
+            dispatch(addTodo(todoObj))
+        } else {
+            alert('Please enter a ToDo...!')
         }
-        console.log(todoObj);
-
-        dispatch(addTodo(todoObj))
     }
 
     return (
